@@ -1,0 +1,188 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles for the entire document */
+body {
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the logo */
+.logo {
+    position: absolute;
+    left: 20px; /* Adjust the left position as needed */
+    top: 20px; /* Adjust the top position as needed */
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    z-index: 1; /* Place it above other content */
+}
+
+
+/* Center the "crud" container and set its width */
+.crud {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the heading */
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation on hover */
+.head:hover {
+    transform: translateX(5px) translateY(5px) rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Styling for individual letters */
+.head span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animation on hover for individual letters */
+.head:hover span {
+    transform: translateX(-5px) translateY(-5px) rotate(-5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
+
+/* Input field styles */
+input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/* Input focus styles */
+input:focus {
+    background: #000;
+    transform: scale(1.05);
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Special styling for price inputs */
+.price input {
+    width: 20%;
+}
+
+/* Styling for the "total" element */
+#total {
+    background: rgb(217, 7, 7);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+#total::before{
+    content: 'Total: ';
+    font-weight: bold;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background: #00204a;
+    color: #fff;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s, letter-spacing 0.3s;
+    font-size: 16px;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #005792;
+    transform: scale(1.05);
+    letter-spacing: 2px;
+}
+
+/* Styling for the search button container */
+.btnSearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for the individual search buttons */
+.btnSearch button {
+    width: 45%;
+    font-size: 18px;
+}
+
+/* Styling for the "deleteAll" element */
+#deleteAll {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+/* Styling for table headers */
+table th {
+    text-transform: uppercase;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #222;
+}
+
+/* Styling for table cells (header and data cells) */
+th, td {
+    padding: 10px;
+    border: 2px solid #222;
+}
+
+/* Styling for the "update" button */
+#update {
+    background: #008000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/* Styling for the "delete" button */
+#delete {
+    background: #FF0000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+}
